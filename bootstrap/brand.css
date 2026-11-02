@@ -1,0 +1,24 @@
+:root {
+  --brand: #0b4f8a;
+  --brand-dark: #083a66;
+}
+[data-bs-theme="dark"] { --brand: #3d8fd6; --brand-dark: #2f78b8; }
+
+.text-brand { color: var(--brand); }
+
+/* CSS variable-аар бүтсэн товч (Bootstrap 5.3-ийн btn-* загвар) */
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+  --bs-btn-focus-shadow-rgb: 11, 79, 138;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-active-border-color: var(--brand-dark);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--brand);
+  --bs-btn-disabled-border-color: var(--brand);
+}
